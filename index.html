@@ -27,24 +27,46 @@
 		color: black;  
 		animation-name: example;  
 		animation-duration: 4s;
+		animation: example 4s infinite;
 	}
 
-
-	.anh1,.anh2,.anh3,.anh4 {
+	.anh1 {
     position: relative;
-    animation: aniName 8s infinite;
-    -moz-animation: aniName 8s infinite;
+   	left: 50%; 
+   	transform: translateX(-200%);
+    animation: aniName 5.5s;
+    /*-moz-animation: aniName 8s infinite;
     -webkit-animation: aniName 8s infinite;
-    -o-animation: aniName 8s infinite;
+    -o-animation: aniName 8s infinite;*/
+	}
+
+	.anh2 {
+		position: relative;
+	   	left: 50%; 
+	   	transform: translateX(-200%);
+	    animation: aniName 4.5s;
+	}
+
+	.anh3 {
+		position: relative;
+	   	left: 50%; 
+	   	transform: translateX(-200%);
+	    animation: aniName 4s;
+	}
+
+	.anh4 {
+		position: relative;
+	   	left: 50%; 
+	   	transform: translateX(-200%);
+	    animation: aniName 3.5s;
 	}
 
 	@keyframes aniName {
-	    0% { left: 0px; }
-	    50% { left: 80%; color: #cc0000; background: #cccccc; }
-	    80% { left: 0px; }
+	    0% { left: -50px; opacity: 0}
+	    100% { opacity: 1; }
 	}
 
-	@-moz-keyframes aniName {
+	/*@-moz-keyframes aniName {
 	    0% { left: 0px; }
 	    50% { left: 80%; color: #cc0000; background: #cccccc; }
 	    80% { left: 0px; }
@@ -60,16 +82,16 @@
 	    0% { left: 0px; }
 	    50% { left: 80%; color: #cc0000; background: #cccccc; }
 	    80% { left: 0px; }
-	}
+	}*/
 </style>
 <body style="background-color: #f6eff0;">
 	<div id="container">
 		<div class="main">
-			<h1>Các thành viên nhóm nhạc Blackpink</h1>
+			<h1 style="text-align: center;">Các thành viên nhóm nhạc Blackpink</h1>
 			<img class="anh1" src="./image/jennie.png" alt="" style="height: 60px;width: 60px">
-			<img class="anh2" src="./image/jisoo.jpg" alt="">
-			<img class="anh3" src="./image/lisa.jpg" alt="">
-			<img class="anh4" src="./image/rose.jpg" alt="">.
+			<img class="anh2" src="./image/jisoo.jpg" alt="" style="height: 60px;width: 60px">
+			<img class="anh3" src="./image/lisa.jpg" alt="" style="height: 60px;width: 60px">
+			<img class="anh4" src="./image/rose.jpg" alt="" style="height: 60px;width: 60px">.
 
 			<h2>Vì sao Blackpink trở thành nhóm nhạc nữ Kpop thành công bậc nhất?</h2>
 			<p>
@@ -78,7 +100,6 @@
 
 			<img src="./image/blackpink.jpg" alt="">
 
-			<!--Bảng bổ trợ-->
 			<h2>4 idol được “sàng lọc” khắt khe </h2>
 			<p>
 				YG Entertainment, “cái nôi” của những nhóm nhạc huyền thoại với phong cách âm nhạc độc đáo như Big Bang, 2NE1, cũng nổi tiếng là một trong những công ty giải trí có quá trình tuyển chọn và đào tạo thực tập sinh khắc nghiệt bậc nhất Hàn Quốc. Tất nhiên, Blackpink (ra mắt năm 2016) không ngoại lệ.
